@@ -1,5 +1,9 @@
+#form-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #form-block {
-    margin: auto;
     width: 20%;
     text-align: center;
 }
@@ -12,4 +16,9 @@ form {
 
 input {
     padding: 10px;
+}
+
+input:user-invalid {
+    background-color: ivory;
+    border: 2px solid red;
 }

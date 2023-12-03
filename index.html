@@ -7,16 +7,26 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<div id="form-block">
-    <h3>Форма для заповнення</h3>
-    <form action="" method="get" id="form-example">
-        <input type="text" name="full-name" placeholder="ПІБ" required />
-        <input type="text" name="group" placeholder="Група" required />
-        <input type="tel" name="phone-number" placeholder="Телефон" required />
-        <input type="text" name="address" placeholder="Адреса" required />
-        <input type="email" name="email" placeholder="Пошта" required />
-        <input type="submit" value="Підтвердити" />
-    </form>
+<div id="form-content">
+    <div id="form-block">
+        <h3>Форма для заповнення</h3>
+        <form action="" method="get" id="form-example">
+            <input type="text" name="full-name" placeholder="ПІБ" required />
+            <input type="text" name="group" placeholder="Група" required />
+            <input type="tel" name="phone-number" placeholder="Телефон" required />
+            <input type="text" name="address" placeholder="Адреса" required />
+            <input type="email" name="email" placeholder="Пошта" required />
+            <input type="submit" value="Підтвердити" />
+        </form>
+    </div>
+    <div hidden id="result-block">
+        <h3>Введені дані</h3>
+        <p><b>ПІБ:</b> <span id="full-name-output"></span></p>
+        <p><b>Група:</b> <span id="group-output"></span></p>
+        <p><b>Телефон:</b> <span id="phone-number-output"></span></p>
+        <p><b>Адреса:</b> <span id="address-output"></span></p>
+        <p><b>Пошта:</b> <span id="email-output"></span></p>
+    </div>
 </div>
 </body>
 </html>
