@@ -14,11 +14,32 @@ form {
     row-gap: 20px;
 }
 
-input {
+form input {
     padding: 10px;
 }
 
 input:user-invalid {
     background-color: ivory;
     border: 2px solid red;
+}
+
+#table-content {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    row-gap: 20px;
+    margin: 40px auto;
+}
+
+table {
+    border-spacing: 0;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid grey;
+}
+
+th, td {
+    padding: 15px;
 }
