@@ -69,8 +69,13 @@ function generateTable() {
 
 function onMouseOverTable(event) {
     const cell = event.target;
-    if(!(cell instanceof HTMLTableCellElement))
+    if(!(cell instanceof HTMLTableCellElement)) {
         return;
+    }
+
+    if(cell.textContent !== "10") {
+        return;
+    }
 
     cell.style.color = getRandomColor();
     cell.style.backgroundColor = getRandomColor();
